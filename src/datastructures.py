@@ -11,6 +11,13 @@ from random import randint
 class FamilyStructure:
     def __init__(self, last_name):
         self.last_name = last_name
+        self._members = [
+            {"first_name": "John", "id": 1, "age": 30, "lucky_numbers": [7, 13]},
+            {"first_name": "Jane", "id": 2, "age": 28, "lucky_numbers": [4, 9]},
+            {"first_name": "Tommy", "id": 3, "age": 5, "lucky_numbers": [2, 5]}
+        ]
+    def __init__(self, last_name):
+        self.last_name = last_name
 
         # example list of members
         self._members = []
